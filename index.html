@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			h4 {
+				color: rgb(255, 121, 0);
+			}
+			
+			.mui-grid-9 .mui-table-view-cell>a>.mui-badge {
+				top: 20%;
+			}
+			
+			.mui-card-content img {
+				width: 100%;
+			}
+		</style>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<h4>accordion（折叠面板）+ maccordion</h4>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell mui-collapse">
+				<a class="mui-navigate-right" href="#">面板1</a>
+				<div class="mui-collapse-content">
+					<p>面板1子内容</p>
+				</div>
+			</li>
+			<li class="mui-table-view-cell mui-collapse">
+				<a class="mui-navigate-right" href="#">面板</a>
+				<div class="mui-collapse-content">
+					<p>面板2子内容</p>
+				</div>
+			</li>
+			<li class="mui-table-view-cell mui-collapse">
+				<a class="mui-navigate-right" href="#">面板3</a>
+				<div class="mui-collapse-content">
+					<p>面板3子内容</p>
+				</div>
+			</li>
+		</ul>
+		<!--actionsheet操作表-->
+
+		<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
+			<!-- 可选择菜单 -->
+			<h4>下方 操作表 + mactionsheet</h4>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">菜单1</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">菜单2</a>
+				</li>
+			</ul>
+			<!-- 取消菜单 -->
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#sheet1"><b>取消</b></a>
+				</li>
+			</ul>
+
+		</div>
+
+		<h4>九宫格 + 数字角标mbadge</h4>
+		<ul class="mui-table-view mui-grid-view mui-grid-9">
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-badge mui-badge-primary">12</span>
+					<div class="mui-media-body">Home</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-email"></span>
+					<span class="mui-badge mui-badge-red">5</span>
+					<div class="mui-media-body">Email</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-chatbubble"></span>
+					<span class="mui-badge mui-badge-purple">www</span>
+					<div class="mui-media-body">Chat</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-location"></span>
+					<span class="mui-badge mui-badge-primary">11</span>
+					<div class="mui-media-body">Location</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-search"></span>
+					<div class="mui-media-body">Search</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="#">
+					<span class="mui-icon mui-icon-phone"></span>
+					<div class="mui-media-body">Phone</div>
+				</a>
+			</li>
+		</ul>
+		<h4>列表 + 数字角标</h4>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 1
+					<span class="mui-badge mui-badge-primary">12</span>
+
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 2
+					<span class="mui-badge">1</span>
+					<span class="mui-badge mui-badge-success">123</span>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 3
+					<span class="mui-badge mui-badge-warning">3</span>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 3
+					<span class="mui-badge mui-badge-danger">45</span>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 3
+					<span class="mui-badge mui-badge-purple">56</span>
+				</a>
+			</li>
+		</ul>
+		<h4>mbutton</h4>
+		<button type="button" class="mui-btn">默认</button>
+		<button type="button" class="mui-btn mui-btn-primary">蓝色</button>
+		<button type="button" class="mui-btn mui-btn-success">绿色</button>
+		<button type="button" class="mui-btn mui-btn-warning">黄色</button>
+		<button type="button" class="mui-btn mui-btn-danger">红色</button>
+		<button type="button" class="mui-btn mui-btn-royal">紫色</button>
+		<br />
+		<br />
+		<button type="button" class="mui-btn mui-btn-outlined">默认</button>
+		<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">蓝色</button>
+		<button type="button" class="mui-btn mui-btn-success mui-btn-outlined">绿色</button>
+		<button type="button" class="mui-btn mui-btn-warning mui-btn-outlined">黄色</button>
+		<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined">红色</button>
+		<button type="button" class="mui-btn mui-btn-royal mui-btn-outlined">紫色</button>
+		<br />
+		<br />
+		<button type="button" data-loading-icon="mui-spinner mui-spinner-custom" class="mui-btn mui-btn-primary">确认</button>
+		<button type="button" data-loading-text="提交中" class="mui-btn mui-btn-warning mui-btn-outlined">确认</button>
+		<button type="button" data-loading-icon-position="right" class="mui-btn">确认</button>
+		<br />
+		<h4>cardview（卡片视图）</h4>
+		<div class="mui-card">
+			<!--页眉，放置标题-->
+			<div class="mui-card-header mui-card-media">
+				<img src="images/a01.png" />
+				<div class="mui-media-body">
+					小M
+					<p>发表于 2016-06-30 15:30</p>
+				</div>
+			</div>
+			<!--内容区-->
+			<div class="mui-card-content">
+				<img src="images/a01.png" />
+			</div>
+			<!--页脚，放置补充信息或支持的操作-->
+			<div class="mui-card-footer">
+				<a href="#" class="mui-cardd-link">link</a>
+				<a href="#" class="mui-cardd-link">comment</a>
+				<a href="#" class="mui-cardd-link">read more</a>
+			</div>
+			<h4>checkbox（复选框）mckeckbox</h4>
+			<div class="mui-input-row mui-checkbox ">
+				<label>Checkbox</label>
+				<input name="Checkbox" value="Item 1" type="checkbox" checked>
+			</div>
+			<div class="mui-input-row mui-checkbox mui-left">
+				<label>Checkbox</label>
+				<input name="Checkbox" type="checkbox" checked>
+			</div>
+			<div class="mui-input-row mui-checkbox mui-disabled">
+				<label>disabled checkbox</label>
+				<input name="checkbox" type="checkbox" disabled="disabled">
+			</div>
+			<h4>dialog（对话框）mdalert mdconfirm mdprompt mdtoast mdclosepopup mdclosepopups</h4>
+			<h4>图片轮播 mGallery</h4>
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/a06.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/a03.png">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/a04.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/a05.jpg">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/a06.jpg">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">	
+							<img src="images/a03.png">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+		</div>
+		<h4>栅格 mrow mcols mmcolxs</h4>
+		<div class="mui-content">
+			<div class="mui-row">
+				<div class="mui-col-sm-6  mui-col-xs-12">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							Item 1
+						</a>
+					</li>
+				</div>
+				<div class="mui-col-sm-6  mui-col-xs-12">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							Item 1
+						</a>
+					</li>
+				</div>
+			</div>
+		</div>
+		<h4>icon 图标</h4>
+		<span class="mui-icon mui-icon-weixin"></span>
+		<span class="mui-icon mui-icon-spinner mui-spin" style="color:green"></span>
+		<span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>
+
+		
+	</body>
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script>
+		mui('#sheet1').popover('toggle');
+		//btn点击loading加载
+		mui(document.body).on('tap', '.mui-btn', function(e) {
+			mui(this).button('loading');
+			setTimeout(function() {
+				mui(this).button('reset');
+			}.bind(this), 2000);
+		});
+		//弹出对话框 dialog （对话框）
+		mui.prompt('text', 'deftext', 'title', ['true', 'false'], null, 'div')
+		document.querySelector('.mui-popup-input input').type = 'password'
+		mui.alert('message', 'title', 'btnValue', function(e) {
+			e.index
+		}, 'div')
+
+		//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+			interval: 1500 //自动轮播周期，若为0则不自动播放，默认为0；
+		});
+
+		//		gallery.slider().gotoItem(index); //跳转到第index张图片，index从0开始；
+		
+	
+	</script>
+
+</html>
