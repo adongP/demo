@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			.mui-slider-indicator.mui-segmented-control{
+				background:#ccc;
+			}
+			.mui-slider-indicator.mui-segmented-control{
+				z-index:10;
+			}
+		</style>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+	<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+  	  <div class="mui-scroll">
+        <a class="mui-control-item mui-active">
+            推荐
+        </a>
+        <a class="mui-control-item">
+            热点
+        </a>
+        <a class="mui-control-item">
+            北京
+        </a>
+        <a class="mui-control-item">
+            社会
+        </a>
+        <a class="mui-control-item">
+            娱乐
+        </a>
+        <a class="mui-control-item">
+            科技
+        </a>
+    </div>
+	</div>
+<div class="mui-scroll-wrapper">
+    <div class="mui-scroll">
+        <!--这里放置真实显示的DOM内容-->
+      	  <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        Item 1
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 2
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 3
+                    </a>
+                </li>
+           
+           	<li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        Item 1
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 2
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 3
+                    </a>
+                </li>
+           
+           
+           <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        Item 1
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 2
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 3
+                    </a>
+                </li>
+          
+           
+           <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        Item 1
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 2
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 3
+                    </a>
+                </li>
+           <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        Item 1
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 2
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                         Item 3
+                    </a>
+                </li>
+            </ul>
+           
+    </div>
+</div>
+
+	</body>
+	<script>
+		mui('.mui-scroll-wrapper').scroll({
+//			deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			scrollY: true, //是否竖向滚动
+			scrollX: false, //是否横向滚动
+			startX: 0, //初始化时滚动至x
+			startY: 0, //初始化时滚动至y
+			indicators: true, //是否显示滚动条
+			deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+			bounce: true //是否启用回弹
+		});
+		mui('.mui-scroll-wrapperS').scroll({
+//			deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			scrollY: true, //是否竖向滚动
+			scrollX: false, //是否横向滚动
+			startX: 0, //初始化时滚动至x
+			startY: 0, //初始化时滚动至y
+			indicators: true, //是否显示滚动条
+			deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+			bounce: true //是否启用回弹
+		});
+	</script>
+
+</html>
