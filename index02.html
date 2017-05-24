@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+			.mui-table-view-cell>a:not(.mui-btn).mui-active {
+				background: rgb(255, 121, 0);
+			}
+		</style>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-card">
+			<div class="mui-input-group" id="input_example">
+				<div class="mui-input-row">
+					<label>用户名</label>
+					<input type="text" class="mui-input-clear" id="col1" placeholder="请输入用户名">
+				</div>
+				<div class="mui-input-row">
+					<label>密码</label>
+					<input type="password" class="mui-input-password" id="col2" placeholder="请输入密码">
+				</div>
+				<div class="mui-button-row">
+					<button type="button" class="mui-btn mui-btn-primary" id="input_check">验证</button>
+
+				</div>
+
+			</div>
+		</div>
+		<h4>list表单</h4>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 1
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 2
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 3
+				</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-right" src="images/a03.png">
+					<div class="mui-media-body">
+						幸福
+						<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-right" src="images/a01.png">
+					<div class="mui-media-body">
+						木屋
+						<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-right" src="images/a02.jpg">
+					<div class="mui-media-body">
+						CBD
+						<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="images/a06.jpg">
+					<div class="mui-media-body">
+						幸福
+						<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="images/a05.jpg">
+					<div class="mui-media-body">
+						木屋
+						<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a href="javascript:;">
+					<img class="mui-media-object mui-pull-left" src="images/a04.jpg">
+					<div class="mui-media-body">
+						CBD
+						<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				Item 1
+			</li>
+			<li class="mui-table-view-cell">
+				Item 2
+			</li>
+			<li class="mui-table-view-cell">
+				Item 3
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 1
+					<span class="mui-badge mui-badge-primary">11</span>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 2
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					Item 3
+				</a>
+			</li>
+		</ul>
+		<h4>遮罩蒙版mmask</h4>
+	<div id="popover" class="mui-popover" style="width:100%; height:12.5rem;">  
+            <ul class="mui-table-view">  
+               <li class="mui-table-view-cell"><a href="#">Item1</a></li>  
+               <li class="mui-table-view-cell"><a href="#">Item2</a></li>  
+               <li class="mui-table-view-cell"><a href="#">Item3</a></li>  
+               <li class="mui-table-view-cell"><a href="#">Item4</a></li>  
+               <li class="mui-table-view-cell"><a href="#">Item5</a></li>  
+            </ul>  
+        </div>  
+<a href="#popover" id="openPopover" class="mui-btn mui-btn-primary mui-btn-block">打开弹出菜单</a>  
+</div>  
+
+m
+	</body>
+	<script>
+//		var mask = mui.createMask(); //callback为用户点击蒙版时自动执行的回调；
+//		mask.show(); //显示遮罩
+//		mask.close(); //关闭遮罩
+
+		mui("#input_example input").each(function() {
+			//若当前input为空，则alert提醒 
+			if(!this.value || this.value.trim() == "") {
+				var label = this.previousElementSibling;
+				mui.alert(label.innerText + "不允许为空");
+				check = false;
+				return false;
+			}
+		}); //校验通过，继续执行业务逻辑 
+		if(check) {
+			mui.alert('验证通过!')
+		}
+	</script>
+
+</html>
